@@ -1,0 +1,96 @@
+{
+  "header": {
+    "services": "Xizmatlar",
+    "connection": "Aloqa",
+    "address": "Manzil",
+    "street": "Ahmad Donish ko‘chasi, 7-uy",
+    "languages": "Til"
+  },
+
+  "main": {
+    "name": "Qurbonov Alisher",
+    "surname": "BAXROMOVICH",
+
+    "btn": "YOZILISH",
+    "info01": "LOR jarrox",
+    "info02": "Rinoxirurg",
+    "info03": "9 yillik tajriba",
+    "info04": "5000 dan ortiq operatsiyalar"
+  },
+  "prices": {
+    "btn": "Narxlar ro‘yxatini yuklab olish",
+    "price": "Narxi"
+  },
+
+  "armor": {
+    "title01": "Bizning kichik LOR-klinikamiz Yunusobodda. Biz yuqori malakali yordam va istalgan vaqtda kun yoki tun patsiyentlarni samarali davolashni kafolatlaymiz. Biz o‘z xizmatlarimiz sifatiga ishonchimiz komil va sizga tez fursatda sog‘ayib, to‘liq hayotga qaytishingizni va‘da qilamiz.",
+    "title02": "Biz tushunamizki, ishonchingizni qozonadigan mutaxassisni topish qiyin. Shuning uchun biz doimiy ravishda o‘z kasbiy va ijtimoiy ko‘nikmalarimizni rivojlantirib, siz konsultatsiya va muolajalar vaqti da o‘zingizni ishonchli va qulay his qilishingiz uchun harakat qilamiz.",
+    "info01": "Ish vaqti 24/7",
+    "info02": "Tajriba",
+    "info03": "Hamyonbop narxlar"
+  },
+
+  "review": {
+    "title": "Bizning bemorlarimizning sharhlari",
+    "feedback": {
+      "user1": {
+        "desc": "Rahmat tez va sifatli tibbiy yordam uchun. Burunni yuvib berishdi - juda yaxshi. Endi nafas ololaman va hattoki gapirishim mumkin.",
+        "author": "Aslan Inoyatov",
+        "social": "clinics.uz"
+      },
+      "user2": {
+        "desc": "Malakali mutaxassis. Agar biron bir muammo bo'lsa, men qaytib kelaman!",
+        "author": "Umar",
+        "social": "clinics.uz"
+      },
+      "user3": {
+        "desc": "Doktor burun bitishini bir umrga qutulishimga yordam berdi. Katta rahmat.",
+        "author": "Fagim",
+        "social": "med24.uz"
+      }
+    }
+  },
+
+  "social": {
+    "title": "Bizning ijtimoiy tarmoqlar",
+    "text": "LOR kasalliklarining oldini olish haqida foydali ma‘lumotlar va boshqalar"
+  },
+
+  "contacts": {
+    "title": "Aloqa",
+    "city": "Toshkent, Yunusobod 15-chi kv, ",
+    "street" : "Ahmad Donish ko‘chasi, 7-uy",
+    "orientir": "Orientir: Turkiston metrosi",
+    "time": "Ish vaqti: 24/7"
+  },
+
+  "footer": {
+    "itemTitle01": "Alisher Bahromovich Qurbonovning LOR-xirurgiya klinikasi: Sog'lig'ingiz ishonchli qo'llarda",
+    "itemText01": "Yunusobod, Toshkentning yuragida joylashgan bizning LOR kasalliklari klinikamizga xush kelibsiz. Bu yerda, sohaning yetakchi mutaxassisi, doktor Alisher Bahromovich Qurbonov rahbarligida, biz quloqlar, burun va tomog'ning kasalliklarini aniqlash, davolash va oldini olish bo'yicha keng ko'lamli xizmatlarni taklif etamiz. Bizning klinikamiz kechayu kunduz ishlaydi, sizga qulay vaqtda yuqori sifatli tibbiy yordamga kirish imkoniyatini ta'minlaydi.",
+
+    "itemTitle02": "Bizning klinikamiz gajmorit, sinusit, adenoidlar, otit kabi kasalliklarni davolashdan tashqari, boshqa LOR muammolari uchun ham to'liq xizmatlarni taklif etadi. Biz eng zamonaviy diagnostika va davolash usullaridan foydalanib, bemorlarimiz uchun eng yaxshi natijalarga erishishni maqsad qilamiz:",
+    "itemTitle02DPTitle01": "Gajmorit va sinusitni davolash:",
+    "itemTitle02DPText01": "Innovatsion yondashuvlar yordamida biz burun bo'shliqlarining yallig'lanishini samarali tarzda davolaymiz, takroriy kasallanish xavfini kamaytiramiz.",
+
+    "itemTitle03DPTitle02": "Adenoidlarni olib tashlash va otitni davolash:",
+    "itemTitle03DPText02": "Kam invaziv texnikalardan foydalanib, biz bolalar va kattalar bemorlarni adenoidlar va quloq yallig'lanishlari muammolaridan muvaffaqiyatli davolaymiz.",
+
+    "itemTitle04DPTitle03": "Zamonaviy LOR kasalliklarini davolash usullari:",
+    "itemTitle04DPText03": "Endoskopik operatsiyalar, lazer va radioto'lqinli usullar kabi, tiklanish davrini minimal darajaga tushiradigan va davolashning yuqori samaradorligini ta'minlaydigan.",
+
+    "itemTitle05": "Bizning afzalliklarimiz:",
+    "itemTitle06DPTitle04": "Shaxsiy yondashuv: ",
+    "itemTitle06DPText04": "Biz har bir bemorga individual e'tibor beramiz, ularning noyob ehtiyoj va sharoitlariga eng mos keladigan davolash rejalarini ishlab chiqamiz.",
+
+    "itemTitle07DPTitle05": "Kechayu kunduz ishlash:",
+    "itemTitle07DPText05": "Har qanday vaqtda yordam berishga tayyorligimiz - bizning ustuvorligimiz.",
+
+    "itemTitle08DPTitle06": "Tajribali mutaxassis:",
+    "itemTitle08DPText06": "Doktor Qurbonov otolaringologiya sohasida boy tajribaga va chuqur bilimga ega, bu esa bizga eng so'nggi ilmiy yutuqlarga asoslangan davolashni aklif etish imkonini beradi.",
+
+    "itemTitle09DPTitle07": "Yuqori texnologiyali uskunalar: ",
+    "itemTitle09DPText07": " Bizning klinikamiz aniq diagnostika va samarali davolash uchun zamonaviy tibbiy uskunalarga ega. ",
+
+    "itemTitle10": "Doktor Qurbonovning klinikasida siz nafaqat professional tibbiy yordam, balki har bir davolanish bosqichida g'amxo'rlik va qo'llab-quvvatlashni topasiz. Bizning maqsadimiz - siz va yaqinlaringizga Toshkentdagi eng yaxshi LOR xizmatlariga kirishni ta'minlash, shunda siz noqulaylik va og'riqsiz to'liq hayot kechirishingiz mumkin. Agar siz LOR kasalliklarini davolashda malakali yordam izlayotgan bo'lsangiz, bizning klinikamizga murojaat qilishingizdan tortinmang. Biz sizga kechayu kunduz yordam berish uchun bu yerdamiz. Qabulga yozilish yoki qo'shimcha ma'lumot olish uchun bugun biz bilan bog'laning."
+  }
+}
