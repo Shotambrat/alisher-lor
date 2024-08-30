@@ -16,7 +16,21 @@ export const App = () => {
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
+
   const prices = i18n.language === "ru" ? pricesRU : pricesUZ;
+
+  const handleButtonClick = (action: string) => {
+    fetch("/ajax.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: `action=${encodeURIComponent(action)}`,
+    })
+      .then((response) => response.text())
+      .then((data) => console.log(data))
+      .catch((error) => console.error("Error:", error));
+  };
 
   const openTable = () => {
     if (i18n.language === "ru") {
@@ -65,7 +79,7 @@ export const App = () => {
                   ) : (
                     <img src={icons.ru} alt="" />
                   )}
-                  {t("header.languages")}: 
+                  {t("header.languages")}:
                 </label>
                 <select
                   name="language"
@@ -97,7 +111,7 @@ export const App = () => {
                 </ul>
               </nav>
               <div className="header-inner__hamburger_adress">
-                <a href="+998977101692">+998 97 710 16 92</a>
+                <a onClick={() => handleButtonClick("Header Tel: +998 97 710 16 92")} href="tel:+998977101692">+998 97 710 16 92</a>
                 <p>{t("header.street")}</p>
               </div>
             </div>
@@ -121,7 +135,12 @@ export const App = () => {
                 <li>{t("main.info03")}</li>
                 <li>{t("main.info04")}</li>
               </ul>
-              <button onClick={() => scrollToSection(contactsRef)}>
+              <button
+                onClick={() => {
+                  handleButtonClick("Записаться");
+                  scrollToSection(contactsRef);
+                }}
+              >
                 {t("main.btn")}
               </button>
             </div>
@@ -149,7 +168,14 @@ export const App = () => {
               ))}
             </ul>
 
-            <button onClick={openTable}>{t("prices.btn")}</button>
+            <button
+              onClick={() => {
+                handleButtonClick("Скачать прайс-лист");
+                openTable();
+              }}
+            >
+              {t("prices.btn")}
+            </button>
           </div>
         </div>
       </section>
@@ -231,22 +257,22 @@ export const App = () => {
           <p>{t("social.text")}</p>
           <ul>
             <li>
-              <a href="https://www.instagram.com/dralisherqurbonov/">
+              <a onClick={() => handleButtonClick('Instgram')} href="https://www.instagram.com/dralisherqurbonov/">
                 <img src={icons.instagram} alt="Иконка инстраграм" />
               </a>
             </li>
             <li>
-              <a href="https://www.tiktok.com/@dralisherqurbonov?_t=8kRO57uxgUD&_r=1">
+              <a onClick={() => handleButtonClick('Tik Tok')} href="https://www.tiktok.com/@dralisherqurbonov?_t=8kRO57uxgUD&_r=1">
                 <img src={icons.tiktok} alt="Иконка Тиктока" />
               </a>
             </li>
             <li>
-              <a href="https://t.me/lorjarrohqurbonov">
+              <a onClick={() => handleButtonClick('Telegram')} href="https://t.me/lorjarrohqurbonov">
                 <img src={icons.telegram} alt="Иконка телеграм" />
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/channel/UCPmqF5R4CNjpovvFGImPZpg">
+              <a onClick={() => handleButtonClick('You Tube')} href="https://www.youtube.com/channel/UCPmqF5R4CNjpovvFGImPZpg">
                 <img src={icons.youtube} alt="Иконка ютуб" />
               </a>
             </li>
@@ -261,13 +287,13 @@ export const App = () => {
               <h2>{t("contacts.title")}</h2>
               <ul>
                 <li>
-                  <a href="#">+998 97 710 16 92</a>
+                  <a onClick={() => handleButtonClick('Футер : +998 97 710 16 92')} href="tel:+998 97 710 16 92">+998 97 710 16 92</a>
                 </li>
                 <li>
-                  <a href="#">+998 90 806 16 92</a>
+                  <a onClick={() => handleButtonClick('Футер : +998 90 806 16 92')} href="tel:+998 90 806 16 92">+998 90 806 16 92</a>
                 </li>
                 <li>
-                  <a href="#">+998 95 631 19 91</a>
+                  <a onClick={() => handleButtonClick('Футер : +998 95 631 19 91')} href="tel:+998 95 631 19 91">+998 95 631 19 91</a>
                 </li>
               </ul>
               <a href="#">ali.med.xz1991@gmail.com</a>
@@ -277,8 +303,8 @@ export const App = () => {
                 <p>{t("contacts.orientir")}</p>
               </div>
               <p>{t("contacts.time")}</p>
-              <div className="contacts-inner__logo">
-                <a href="https://result-me.uz/">
+              <div  className="contacts-inner__logo">
+                <a onClick={() => handleButtonClick('Переход на сайт Result')}  href="https://result-me.uz/">
                   <img src={icons.result} alt="Иконка result" />
                 </a>
               </div>
@@ -295,6 +321,6 @@ export const App = () => {
           </div>
         </div>
       </section>
-      </>
+    </>
   );
 };
